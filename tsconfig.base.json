@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@juanchordg/base": ["packages/base/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
