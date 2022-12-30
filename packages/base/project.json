@@ -20,7 +20,8 @@
         "project": "packages/base/package.json",
         "entryFile": "packages/base/src/index.ts",
         "external": ["@emotion/react/jsx-runtime"],
-        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "rollupConfig": "packages/base/rollup.config.js",
+        "format": ["cjs", "esm"],
         "compiler": "swc",
         "assets": [
           {
