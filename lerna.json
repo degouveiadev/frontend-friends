@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "npmClient": "yarn",
+  "packages": ["packages/*"],
+  "useWorkspaces": true,
+  "useNx": true,
+  "version": "independent",
+  "ignoreChanges": ["**/CHANGELOG.md", "**/*.md", "**/*.d.ts", "**/*spec.*"],
+  "command": {
+    "init": {
+      "exact": true
+    },
+    "version": {
+      "message": "chore: :checkered_flag: bump release versions",
+      "conventionalCommits": true,
+      "includeMergedTags": true,
+      "push": false,
+      "exact": true
+    }
+  }
+}
