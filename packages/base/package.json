@@ -1,12 +1,17 @@
 {
   "name": "@juanchordg/base",
   "version": "0.0.1",
-  "main": "./index.js",
-  "module": "./index.mjs",
+  "main": "./index.cjs",
+  "module": "./index.js",
   "exports": {
     ".": {
-      "import": "./index.mjs",
-      "require": "./index.js"
+      "import": "./index.js",
+      "require": "./index.cjs"
     }
+  },
+  "repository": "https://github.com/juanchordg/frontend-friends.git",
+  "publishConfig": {
+    "@juanchordg:registry": "https://npm.pkg.github.com/juanchordg",
+    "directory": "../../dist/packages/base"
   }
 }
