@@ -1,0 +1,17 @@
+{
+  "name": "@juanchordg/ui",
+  "version": "0.1.0-rc.1",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "repository": "https://github.com/juanchordg/frontend-friends.git",
+  "publishConfig": {
+    "@juanchordg:registry": "https://npm.pkg.github.com/juanchordg",
+    "directory": "../../dist/packages/ui"
+  }
+}
